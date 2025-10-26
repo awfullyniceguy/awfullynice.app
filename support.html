@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awfully Nice App Support</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind for Inter font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+        .support-container h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 0.25rem;
+            color: #1f2937;
+        }
+        .support-container p, .support-container ul {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col antialiased">
+
+    <!-- Header / Simple Navigation -->
+    <header class="bg-white shadow-sm">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="logo.png" alt="Awfully Nice Logo" class="h-8 w-8 mr-2">
+                <h1 class="text-xl font-bold text-gray-900">Awfully Nice</h1>
+            </div>
+            <nav class="space-x-4 text-sm">
+                <a href="index.html#apps" class="text-gray-600 hover:text-indigo-600 transition duration-150">Apps</a>
+                <a href="support.html" class="text-gray-600 hover:text-indigo-600 transition duration-150">Support</a>
+                <a href="privacy.html" class="text-gray-600 hover:text-indigo-600 transition duration-150">Privacy Hub</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area: Support Document -->
+    <main class="flex-grow flex items-start justify-center py-16 px-4">
+        
+        <div class="w-full max-w-4xl bg-white p-8 sm:p-12 rounded-xl shadow-2xl space-y-8 support-container">
+            
+            <header class="text-center mb-8">
+                <h1 class="text-4xl font-extrabold text-indigo-700">App Support and Contact</h1>
+                <p class="text-gray-500 mt-2">How to get help or provide feedback for our applications.</p>
+            </header>
+
+            <section>
+                <p>We're here to help! If you encounter any bugs, have questions, or need assistance with any of our apps, please reach out using the contact method below. We aim to respond to all support requests within 24-48 hours.</p>
+            </section>
+
+            <section>
+                <h2>Technical Support & Inquiries</h2>
+                <p>For the fastest response regarding bugs, technical issues, feature requests, or general questions, please email us directly:</p>
+                
+                <p class="text-lg font-semibold text-indigo-600 my-4">
+                    Email: <a href="mailto:info@awfullynice.app" class="underline hover:text-indigo-700">info@awfullynice.app</a>
+                </p>
+
+                <p>When reporting a technical issue, please include:</p>
+                <ul>
+                    <li>The name of the app (e.g., LobePort)</li>
+                    <li>The device and operating system version you are using (e.g., Vision Pro, visionOS 2.0)</li>
+                    <li>A detailed description of the problem and steps to reproduce it</li>
+                    <li>Any relevant screenshots or error messages</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>App Review Information</h2>
+                <p>For the App Review Team, all required policy documents are accessible via the links below:</p>
+                <ul>
+                    <li>General Privacy Policy Hub: <a href="privacy.html" class="text-indigo-600 hover:text-indigo-700 underline">privacy.html</a></li>
+                    <li>LobePort Specific Privacy Policy: <a href="lobeport_privacy.html" class="text-indigo-600 hover:text-indigo-700 underline">lobeport_privacy.html</a></li>
+                </ul>
+                <p>Our commitment to user privacy means no user data is tracked or shared.</p>
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row justify-between items-center text-xs">
+            
+            <p class="mb-2 sm:mb-0 opacity-80">&copy; 2025 Awfully Nice App. All rights reserved.</p>
+
+            <div class="space-x-4">
+                <a href="privacy.html" class="hover:text-indigo-400 transition duration-150 underline">Privacy Policy</a>
+                <a href="support.html" class="hover:text-indigo-400 transition duration-150 underline">Support</a>
+                <a href="mailto:info@awfullynice.app" class="hover:text-indigo-400 transition duration-150 underline">info@awfullynice.app</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LobePort Privacy Policy</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind for Inter font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+        .policy-container h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 0.25rem;
+            color: #1f2937;
+        }
+        .policy-container p, .policy-container ul {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+        .policy-container ul {
+            list-style: disc;
+            margin-left: 1.5rem;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col antialiased">
+
+    <!-- Header / Simple Navigation -->
+    <header class="bg-white shadow-sm">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="logo.png" alt="Awfully Nice Logo" class="h-8 w-8 mr-2">
+                <h1 class="text-xl font-bold text-gray-900">Awfully Nice</h1>
+            </div>
+            <nav class="space-x-4 text-sm">
+                <a href="index.html#apps" class="text-gray-600 hover:text-indigo-600 transition duration-150">Apps</a>
+                <a href="support.html" class="text-gray-600 hover:text-indigo-600 transition duration-150">Support</a>
+                <a href="privacy.html" class="text-gray-600 hover:text-indigo-600 transition duration-150">Privacy Hub</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area: Policy Document -->
+    <main class="flex-grow flex items-start justify-center py-16 px-4">
+        
+        <div class="w-full max-w-4xl bg-white p-8 sm:p-12 rounded-xl shadow-2xl space-y-8 policy-container">
+            
+            <header class="text-center mb-8">
+                <h1 class="text-4xl font-extrabold text-indigo-700">LobePort Privacy Policy</h1>
+                <p class="text-sm text-gray-500 mt-2">Effective Date: October 26, 2025</p>
+            </header>
+
+            <section>
+                <p>LobePort is a utility application designed to operate with maximum respect for user privacy. Our core philosophy is to process all data locally on your device and **collect no personal data whatsoever**.</p>
+            </section>
+
+            <section>
+                <h2>1. Data Collection and Usage</h2>
+                <p><strong>LobePort collects zero personal data from its users.</strong> We do not collect names, email addresses, location, device identifiers, usage statistics, or any other personally identifiable information. There are no analytics, ads, or third-party tracking libraries within the app.</p>
+            </section>
+
+            <section>
+                <h2>2. Permissions Requested and Justification</h2>
+                <p>The LobePort app requests access to certain system features to provide its core functionality. These permissions are used exclusively for on-device processing:</p>
+                
+                <ul>
+                    <li><strong>Camera:</strong> Required to capture the live video stream from the Developer Strap/HDMI capture device for display and processing within the app.</li>
+                    <li><strong>Photos/Media Library:</strong> Required if the user chooses to save recorded video streams or images generated within the app to their device's Photos library.</li>
+                    <li><strong>Microphone:</strong> The application does not process or record audio. However, certain system APIs that handle video input may require temporary access to the microphone setting. **No audio data is ever stored, transmitted, or used by LobePort.**</li>
+                </ul>
+
+                <p>All video upscaling, recording, and processing functions are performed locally on the user’s device (on-device processing).</p>
+            </section>
+
+            <section>
+                <h2>3. Data Sharing and Disclosure</h2>
+                <p>LobePort does not share, sell, rent, or disclose any user data to any third parties whatsoever, because no user data is collected in the first place.</p>
+            </section>
+
+            <section>
+                <h2>4. Policy Updates and Contact</h2>
+                <p>We may update this Privacy Policy from time to time. The current version will always be available within the App Store listing and on this webpage.</p>
+                <p>If you have any questions or concerns about this policy, please refer to our <a href="support.html" class="text-indigo-600 hover:text-indigo-700 underline font-medium">Support Page</a> or contact us directly at <a href="mailto:info@awfullynice.app" class="text-indigo-600 hover:text-indigo-700 underline font-medium">info@awfullynice.app</a>.</p>
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row justify-between items-center text-xs">
+            
+            <p class="mb-2 sm:mb-0 opacity-80">&copy; 2025 Awfully Nice App. All rights reserved.</p>
+
+            <div class="space-x-4">
+                <a href="privacy.html" class="hover:text-indigo-400 transition duration-150 underline">Privacy Policy</a>
+                <a href="support.html" class="hover:text-indigo-400 transition duration-150 underline">Support</a>
+                <a href="mailto:info@awfullynice.app" class="hover:text-indigo-400 transition duration-150 underline">info@awfullynice.app</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+
