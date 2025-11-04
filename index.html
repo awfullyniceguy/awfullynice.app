@@ -6,13 +6,28 @@
     <title>Awfully Nice | App Development</title>
     <!-- Load Tailwind CSS -->
 <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Configure Tailwind for Inter font -->
+    <!-- Load Poppins font as Primary Typography -->
 <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Poppins', sans-serif;
             background-color: #f3f4f6;
-            color: #1f2937;
+            color: #14011E; /* Dark Purple */
+        }
+        .text-primary-dark { color: #14011E; }
+        .text-primary-medium { color: #A95FCA; }
+        .bg-primary-medium { background-color: #A95FCA; }
+        .bg-dark-purple { background-color: #14011E; }
+        .hover\:text-primary-medium:hover { color: #A95FCA; }
+        .border-primary-medium { border-color: #A95FCA; }
+        
+        .btn-ko-fi {
+            background-color: #FDCC47; /* Bright Yellow */
+            color: #14011E; 
+            transition: all 0.2s ease;
+        }
+        .btn-ko-fi:hover {
+            background-color: #fdd56b; 
         }
     </style>
 </head>
@@ -23,12 +38,12 @@
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
             <div class="flex items-center">
                 <img src="logo.png" alt="Awfully Nice Logo" class="h-8 w-8 mr-2"> 
-                <h1 class="text-xl font-bold text-gray-900">Awfully Nice</h1>
+                <h1 class="text-xl font-bold text-primary-dark">Awfully Nice</h1>
             </div>
             <nav class="space-x-4 text-sm">
-                <a href="index.html#apps" class="text-gray-600 hover:text-indigo-600 transition duration-150">Apps</a>
-                <a href="support.html" class="text-gray-600 hover:text-indigo-600 transition duration-150">Support</a>
-                <a href="privacy.html" class="text-gray-600 hover:text-indigo-600 transition duration-150">Privacy Hub</a>
+                <a href="index.html#apps" class="text-gray-600 hover:text-primary-medium transition duration-150">Apps</a>
+                <a href="support.html" class="text-gray-600 hover:text-primary-medium transition duration-150">Support</a>
+                <a href="privacy.html" class="text-gray-600 hover:text-primary-medium transition duration-150">Privacy Hub</a>
             </nav>
         </div>
     </header>
@@ -40,39 +55,39 @@
             
             <!-- App Card: LobePort -->
             <section id="apps">
-                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-b pb-3 text-center">Our Applications</h3>
+                <h3 class="text-3xl font-bold text-primary-dark mb-6 border-b border-gray-200 pb-3 text-center">Our Applications</h3>
                 
-                <div class="border border-gray-200 p-6 rounded-lg bg-indigo-50/50">
+                <div class="border border-primary-medium/30 p-6 rounded-lg bg-primary-medium/10">
                     <div class="flex items-center mb-4">
-                        <div class="w-10 h-10 bg-indigo-600 rounded-lg flex items-center justify-center text-white text-lg font-bold mr-4">
+                        <div class="w-10 h-10 bg-primary-medium rounded-lg flex items-center justify-center text-white text-lg font-bold mr-4">
                             LP
                         </div>
-                        <h4 class="text-2xl font-semibold text-gray-900">LobePort</h4>
+                        <h4 class="text-2xl font-semibold text-primary-dark">LobePort</h4>
                     </div>
                     
-                    <p class="text-gray-600 mb-4">
+                    <p class="text-gray-700 mb-4">
                         LobePort transforms your Apple Vision Pro into a live visual input display. It connects via the Developer Strap and an HDMI capture device, enabling real-time viewing, upscaling, and recording of external video feeds.
                     </p>
                     
-                    <a href="#" class="inline-block text-indigo-600 font-medium hover:text-indigo-700 underline mb-4">
+                    <a href="#" class="inline-block text-primary-medium font-semibold hover:text-primary-dark underline mb-4">
                         View on App Store &rarr;
                     </a>
 
                     <div class="pt-4 border-t border-gray-200 text-sm flex justify-between items-center">
                         <span class="font-medium text-gray-700">Required Permissions: Camera, Mic, Photos</span>
-                        <a href="lobeport_privacy.html" class="text-indigo-500 hover:text-indigo-600 underline font-medium">Policy &rarr;</a>
+                        <a href="lobeport_privacy.html" class="text-primary-medium hover:text-primary-dark underline font-medium">Policy &rarr;</a>
                     </div>
                 </div>
             </section>
 
             <!-- Coming Soon / Call to Action -->
-            <section class="mt-8 pt-6 border-t border-dashed border-gray-300 text-center">
-                <h4 class="text-xl font-medium text-gray-800 mb-2">More Apps Coming Soon</h4>
-                <p class="text-gray-500 mb-4">
+            <section class="mt-8 pt-6 border-t border-dashed border-primary-medium/50 text-center">
+                <h4 class="text-xl font-medium text-primary-dark mb-2">More Apps Coming Soon</h4>
+                <p class="text-gray-700 mb-4">
                     We are committed to keeping our apps free and focused on user privacy. If you enjoy our work and would like to support future development, you can buy us a coffee!
                 </p>
                 
-                <a href="https://ko-fi.com/awfullyniceapp" target="_blank" class="text-indigo-600 font-semibold hover:text-indigo-700 underline">
+                <a href="https://ko-fi.com/awfullyniceapp" target="_blank" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-semibold rounded-lg shadow-sm btn-ko-fi">
                     Support Our Development &rarr;
                 </a>
             </section>
@@ -82,15 +97,15 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white">
+    <footer class="bg-dark-purple text-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row justify-between items-center text-xs">
             
             <p class="mb-2 sm:mb-0 opacity-80">&copy; 2025 Awfully Nice App. All rights reserved.</p>
 
             <div class="space-x-4">
-                <a href="privacy.html" class="hover:text-indigo-400 transition duration-150 underline">Privacy Policy</a>
-                <a href="support.html" class="hover:text-indigo-400 transition duration-150 underline">Support</a>
-                <a href="mailto:info@awfullynice.app" class="hover:text-indigo-400 transition duration-150 underline">info@awfullynice.app</a>
+                <a href="privacy.html" class="hover:text-primary-medium transition duration-150 underline">Privacy Policy</a>
+                <a href="support.html" class="hover:text-primary-medium transition duration-150 underline">Support</a>
+                <a href="mailto:info@awfullynice.app" class="hover:text-primary-medium transition duration-150 underline">info@awfullynice.app</a>
             </div>
         </div>
     </footer>
